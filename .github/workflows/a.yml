@@ -2,9 +2,9 @@ name: CI
       
 on:
   push:
-  jobs:
-    build:
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+jobs:
+  build:
+    - name: Run
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
