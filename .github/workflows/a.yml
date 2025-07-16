@@ -4,7 +4,9 @@ on:
   push:
 jobs:
   build:
-    - name: Run
-      run: |
+    runs-on: ubuntu-latest
+    steps:
+     - name: Run
+       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
