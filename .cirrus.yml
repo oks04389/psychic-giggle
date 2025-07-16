@@ -1,0 +1,7 @@
+task:
+  name: Hello Cirrus
+  container:
+    image: ubuntu:22.04
+  script:
+    - echo "Test"
+    - date
