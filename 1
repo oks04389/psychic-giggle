@@ -1,1 +1,13 @@
-1
+name: Daily URL Request
+
+on:
+  schedule:
+    - cron: "0 1 * * *"  # 每天 1:00 UTC
+  workflow_dispatch:      # 允许手动触发
+
+jobs:
+  curl-url:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request the URL
+        run: curl -L "https://your-url.com"
