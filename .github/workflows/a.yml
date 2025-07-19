@@ -8,5 +8,4 @@ jobs:
     steps:
      - name: Run
        run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        echo update
